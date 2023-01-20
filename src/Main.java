@@ -8,17 +8,17 @@ public class Main {
         int bonus;
 
         if (replenishment < 1000) {
-            bonus = replenishment +100;
+            bonus = replenishment + 100;
 
         } else {
             bonus = replenishment / 100;
         }
-            balance = amount + replenishment + bonus;
-            System.out.println("Колличество" + " " + bonus + " " + "бонусных рублей" );
-            System.out.println("Итоговый счет" + " " + balance + " " + "рублей" );
-        }
-
+        balance = amount + replenishment + bonus;
+        System.out.println("Колличество:" + " " + bonus + " " + "бонусных рублей");
+        System.out.println("Итоговый счет:" + " " + balance + " " + "рублей");
     }
+
+}
 
 
 
