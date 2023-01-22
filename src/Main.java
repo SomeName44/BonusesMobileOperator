@@ -8,10 +8,10 @@ public class Main {
         int bonus;
 
         if (replenishment < 1000) {
-            bonus = replenishment + 100;
+            bonus = replenishment + amount;
 
         } else {
-            bonus = replenishment / 100;
+            bonus = replenishment / amount;
         }
         balance = amount + replenishment + bonus;
         System.out.println("Колличество:" + " " + bonus + " " + "бонусных рублей");
