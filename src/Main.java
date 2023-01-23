@@ -1,21 +1,25 @@
 public class Main {
     public static void main(String[] args) {
         //Колличество денег на счету клиента
-        int amount = 100;
+        int balance = 100;
         //сумма пополнения
-        int replenishment = 1000;
-        int balance;
+        int replenishment = 1100;
         int bonus;
+        int money;
 
-        if (replenishment < 1000) {
-            bonus = replenishment + amount;
+        if (replenishment <= 1000) {
+            bonus = 0;
+            money = (balance + replenishment + bonus);
 
         } else {
-            bonus = replenishment / amount;
+            bonus = replenishment / 100;
+            money = (balance + replenishment + bonus);
         }
-        balance = amount + replenishment + bonus;
+
         System.out.println("Колличество:" + " " + bonus + " " + "бонусных рублей");
-        System.out.println("Итоговый счет:" + " " + balance + " " + "рублей");
+        System.out.println("Итоговый сумма на счету:" + " " + money + " " + "рублей");
+
+
     }
 
 }
